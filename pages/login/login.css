@@ -26,7 +26,8 @@ body {
 
 .login-container {
 	margin: 12rem auto;
-	width: 35rem;
+	padding: 0 2.4rem;
+	max-width: 35rem;
 }
 
 .login-container h3 {
