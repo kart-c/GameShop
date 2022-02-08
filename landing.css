@@ -65,7 +65,16 @@
 }
 
 .product-list .action-link {
+	background-color: var(--white);
+	color: var(--brand-color);
+	border: 2px solid var(--brand-color);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.product-list .action-link:hover {
 	background-color: var(--brand-color);
+	color: var(--white);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
 }
 
 .product-list .product-card-badge,
@@ -79,17 +88,10 @@
 }
 
 .lp-cta .btn {
-	border: 2px solid var(--brand-color);
-	background-color: var(--white);
-	border-radius: 4rem;
-	color: var(--brand-color);
-	padding: 1.6rem 3.2rem;
-	transition: all 0.2s ease-in;
-}
-
-.lp-cta .btn:hover {
 	background-color: var(--brand-color);
 	color: var(--white);
+	border-radius: 4rem;
+	padding: 1.6rem 3.2rem;
 }
 
 .lp-footer {
