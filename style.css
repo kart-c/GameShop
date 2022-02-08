@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+	--brand-color: #e7230d;
+	--white: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+.header {
+	background-color: var(--white);
+	box-shadow: 0 2px 5px var(--lynx-grey);
+	color: var(--black);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.header h1 {
+	font-size: var(--text-lg);
+	line-height: var(--line-ht-lg);
+}
+
+.header span {
+	color: var(--brand-color);
+}
+
+.header input {
+	border: 1px solid var(--black);
+}
+
+/* Landing page style */
+
+.lp-main {
+	margin: 10.4rem auto 0;
+	width: 90%;
+}
+
+.hero-img-container {
+	box-shadow: 2px 2px 10px var(--lynx-grey) -2px -2px 10px var(--lynx-grey);
+	margin: 3.2rem auto 0;
+	height: 30vh;
+	position: relative;
+}
+
+.hero-img {
+	display: block;
+	height: 100%;
+}
+
+.lp-carousel {
+	display: inline-block;
+	width: 100%;
+	height: 65vh;
+}
+
+.lp-carousel img {
+	display: block;
+	height: 100%;
+}
+
+.lp-text-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2.4rem 0;
+}
+
+.lp-text-container > a {
+	color: var(--info-color);
+	font-size: var(--text-md);
+	text-decoration: underline;
+}
+
+.product-list {
+	margin: 2.4rem 0;
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 3.2rem;
+	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
+
+.product-list .card {
+	width: auto;
+}
+
+.product-list .card-discount {
+	color: var(--brand-color);
+}
+
+.product-list .action-link {
+	background-color: var(--brand-color);
+}
+
+.product-list .product-card-badge,
+.product-list .product-card-badge::before {
+	background-color: var(--primary-color);
+}
+
+.lp-cta {
+	text-align: center;
+	margin: 3.2rem auto;
+}
+
+.lp-cta .btn {
+	border: 2px solid var(--brand-color);
+	background-color: var(--white);
+	border-radius: 4rem;
+	color: var(--brand-color);
+	padding: 1.6rem 3.2rem;
+	transition: all 0.2s ease-in;
+}
+
+.lp-cta .btn:hover {
+	background-color: var(--brand-color);
+	color: var(--white);
+}
+
+.lp-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: var(--black);
+	color: var(--white);
+	padding: 7.2rem 4rem;
+}
+
+.lp-footer-text {
+	flex-shrink: 2;
+}
+
+.lp-footer-text a {
+	color: var(--info-color);
+	text-decoration: underline;
+}
+
+.footer-nav-links {
+	flex-shrink: 0;
+	list-style: none;
+	font-size: var(--text-md);
+	padding: 0 1.6rem;
+}
+
+.footer-nav-links li {
+	margin: 1.2rem 0;
+}
+
+.footer-nav-links a {
+	color: var(--white);
+}
+
+@media only screen and (min-width: 1024px) {
+	.lp-main {
+		width: 80%;
+	}
+
+	.lp-footer {
+		justify-content: center;
+	}
+
+	.lp-footer > * {
+		padding: 0 2.4rem;
+	}
+}
