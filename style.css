@@ -89,7 +89,8 @@ body {
 }
 
 .product-list .card {
-	width: auto;
+	max-width: 40rem;
+	width: 100%;
 }
 
 .product-list .card-discount {
