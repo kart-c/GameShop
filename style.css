@@ -86,11 +86,17 @@ body {
 	grid-auto-flow: row;
 	grid-gap: 3.2rem;
 	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+	justify-items: center;
 }
 
 .product-list .card {
 	max-width: 40rem;
 	width: 100%;
+}
+
+.overlay-icon i {
+	font-size: var(--text-md);
+	transform: translateY(1px);
 }
 
 .product-list .card-discount {
@@ -131,7 +137,7 @@ body {
 	justify-content: space-evenly;
 	background-color: var(--black);
 	color: var(--white);
-	padding: 7.2rem 4rem;
+	padding: 7.2rem 2rem;
 }
 
 .lp-footer-text {
@@ -156,6 +162,16 @@ body {
 
 .footer-nav-links a {
 	color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+	.lp-footer {
+		padding: 7.2rem 4rem;
+	}
+
+	.product-list {
+		justify-items: normal;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
