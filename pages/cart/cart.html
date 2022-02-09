@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://feather-design.netlify.app/Components/main.css" />
+		<link rel="stylesheet" href="../../main.css" />
+		<link rel="stylesheet" href="./cart.css" />
+		<title>Cart</title>
+	</head>
+	<body>
+		<header class="header">
+			<h2><a href="../../index.html">Website</a></h2>
+			<input type="search" name="search" class="header-search" placeholder="Search..." />
+			<i class="fas fa-bars hamburger-menu"></i>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li>
+						<a href="../login/login.html"><i class="fas fa-user"></i> Profile</a>
+					</li>
+					<li>
+						<a href="../wishlist/wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-shopping-bag"></i> Bag</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="cart-main">
+			<div>
+				<h3 class="cart-heading">My Cart</h3>
+				<small>2 Items</small>
+			</div>
+			<section class="cart-container">
+				<div class="cart-items">
+					<div class="card horizontal-card card-shadow">
+						<img
+							src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+							alt="card with icon"
+							class="card-img"
+						/>
+						<div class="content">
+							<h3>Product title</h3>
+							<h4>Product category</h4>
+							<div class="buy-info">
+								<p>
+									<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+									<small class="card-discount">(60% OFF)</small>
+								</p>
+								<select name="product-count" id="product-count">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+							<button class="action-link">Move to Wishlist</button>
+							<button class="action-link remove-btn">Remove</button>
+						</div>
+					</div>
+					<div class="card horizontal-card card-shadow">
+						<img
+							src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+							alt="card with icon"
+							class="card-img"
+						/>
+						<div class="content">
+							<h3>Product title</h3>
+							<h4>Product category</h4>
+							<div class="buy-info">
+								<p>
+									<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+									<small class="card-discount">(60% OFF)</small>
+								</p>
+								<select name="product-count" id="product-count">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+							<button class="action-link">Move to Wishlist</button>
+							<button class="action-link remove-btn">Remove</button>
+						</div>
+					</div>
+				</div>
+				<div class="cart-price-container">
+					<h3>Price Total</h3>
+					<div class="price-details">
+						<div>
+							<span>Price (2 Items)</span>
+							<span>Discount</span>
+							<span>Delivery Charges</span>
+							<span class="amount-span">Total Amount</span>
+						</div>
+						<div>
+							<span>5988 /-</span>
+							<span>- 2390 /-</span>
+							<span>40 /-</span>
+							<span class="amount-span">3588 /-</span>
+						</div>
+					</div>
+					<button class="btn btn-primary">Place Order</button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

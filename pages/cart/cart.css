@@ -1,0 +1,119 @@
+.cart-main {
+	margin: 9.6rem auto 7.2rem;
+	width: 90%;
+}
+
+.cart-heading {
+	font-weight: 400;
+	margin-bottom: 0.8rem;
+}
+
+.cart-heading + small {
+	font-size: 1.4rem;
+	color: var(--grey);
+}
+
+.cart-container {
+	display: flex;
+}
+
+.cart-items {
+	flex-shrink: 2;
+}
+
+.cart-container .card {
+	margin: 3.2rem 0;
+}
+
+.cart-container .action-link {
+	border: 2px solid var(--brand-color);
+	background-color: var(--white);
+	color: var(--brand-color);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	white-space: nowrap;
+	min-width: 15rem;
+}
+
+.cart-container .action-link:hover {
+	background-color: var(--brand-color);
+	color: var(--white);
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.cart-container .remove-btn {
+	border: 2px solid var(--grey);
+	color: var(--grey);
+	margin-top: 0;
+}
+
+.cart-container .remove-btn:hover {
+	background-color: var(--grey);
+	color: var(--white);
+}
+
+.cart-price-container {
+	margin-left: 7.2rem;
+	width: 32rem;
+}
+
+.cart-price-container > h3 {
+	padding-bottom: 1.6rem;
+	border-bottom: 1px solid var(--grey);
+}
+
+.price-details {
+	border-bottom: 1px solid var(--grey);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.price-details span {
+	display: block;
+	font-size: 14px;
+	margin: 0.8rem 0;
+}
+
+.price-details div:last-of-type span {
+	text-align: end;
+}
+
+.price-details .amount-span {
+	border-top: 1px solid var(--grey);
+	font-weight: 700;
+	font-size: var(--text-md);
+	padding: 0.8rem 0;
+	margin-bottom: 0;
+}
+
+.price-details + .btn {
+	display: block;
+	width: 100%;
+	margin-top: 1.6rem;
+	background-color: var(--brand-color);
+}
+
+@media only screen and (max-width: 1150px) {
+	.cart-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cart-container #product-count {
+		margin-left: 8rem;
+	}
+
+	.cart-price-container {
+		margin: 1.6rem auto;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.cart-container .action-link {
+		grid-column: 1/3;
+	}
+
+	.cart-container .remove-btn {
+		grid-row: 6/7;
+	}
+}
