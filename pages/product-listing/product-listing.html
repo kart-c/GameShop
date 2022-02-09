@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://feather-design.netlify.app/Components/main.css" />
+		<link rel="stylesheet" href="../../main.css" />
+		<link rel="stylesheet" href="./product-listing.css" />
+		<title>Cart</title>
+	</head>
+	<body>
+		<header class="header">
+			<h2><a href="../../index.html">Website</a></h2>
+			<input type="search" name="search" class="header-search" placeholder="Search..." />
+			<i class="fas fa-bars hamburger-menu"></i>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li>
+						<a href="../login/login.html"><i class="fas fa-user"></i> Profile</a>
+					</li>
+					<li>
+						<a href="../wishlist/wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-shopping-bag"></i> Bag</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="pl-pg">
+			<aside class="pl-aside">
+				<div class="aside-heading">
+					<h4>Filters</h4>
+					<button>Clear</button>
+				</div>
+				<div class="aside-price">
+					<label for="price">Price</label>
+					<input type="range" min="1000" max="10000" id="price" />
+				</div>
+				<div class="aside-genre">
+					<span for="price">Genre</span>
+					<div class="checkbox-container">
+						<input type="checkbox" name="disabled example input" id="price-checkbox-1" />
+						<label for="price-checkbox-1">Action</label>
+					</div>
+					<div class="checkbox-container">
+						<input type="checkbox" name="disabled example input" id="price-checkbox-2" />
+						<label for="price-checkbox-2">Adventure</label>
+					</div>
+					<div class="checkbox-container">
+						<input type="checkbox" name="disabled example input" id="price-checkbox-3" />
+						<label for="price-checkbox-3">Racing</label>
+					</div>
+					<div class="checkbox-container">
+						<input type="checkbox" name="disabled example input" id="price-checkbox-4" />
+						<label for="price-checkbox-4">RPG</label>
+					</div>
+				</div>
+				<div class="aside-rating">
+					<span>Rating</span>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="rating-input-1" />
+						<label for="rating-input-1">4 star and above</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="rating-input-2" />
+						<label for="rating-input-2">3 star and above</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="rating-input-3" />
+						<label for="rating-input-3">2 star and above</label>
+					</div>
+				</div>
+				<div class="aside-rating">
+					<span>Sort By</span>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="sort-input-1" />
+						<label for="sort-input-1">Price - Low to High</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="price-input-2" />
+						<label for="price-input-2">Price - High to Low</label>
+					</div>
+				</div>
+			</aside>
+			<section class="product-list pl-list">
+				<div class="card product-card card-shadow">
+					<img
+						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+						alt="card with icon"
+						class="card-img"
+					/>
+					<div class="content">
+						<h3>Product title</h3>
+						<h4>Product category</h4>
+						<div class="overlay-icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<span class="product-card-badge"><strong>New</strong></span>
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<a href="#" class="action-link">Add to Cart</a>
+					</div>
+				</div>
+				<div class="card product-card card-shadow">
+					<img
+						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+						alt="card with icon"
+						class="card-img"
+					/>
+					<div class="content">
+						<h3>Product title</h3>
+						<h4>Product category</h4>
+						<div class="overlay-icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<span class="product-card-badge"><strong>New</strong></span>
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<a href="#" class="action-link">Add to Cart</a>
+					</div>
+				</div>
+				<div class="card product-card card-shadow">
+					<img
+						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+						alt="card with icon"
+						class="card-img"
+					/>
+					<div class="content">
+						<h3>Product title</h3>
+						<h4>Product category</h4>
+						<div class="overlay-icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<a href="#" class="action-link">Add to Cart</a>
+					</div>
+				</div>
+				<div class="card product-card card-shadow">
+					<img
+						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+						alt="card with icon"
+						class="card-img"
+					/>
+					<div class="content">
+						<h3>Product title</h3>
+						<h4>Product category</h4>
+						<div class="overlay-icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<a href="#" class="action-link">Add to Cart</a>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
