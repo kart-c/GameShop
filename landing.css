@@ -94,6 +94,10 @@
 	padding: 1.6rem 3.2rem;
 }
 
+.lp-cta a {
+	color: inherit;
+}
+
 .lp-footer {
 	display: flex;
 	align-items: center;
