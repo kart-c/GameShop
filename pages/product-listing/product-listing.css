@@ -2,9 +2,14 @@
 	display: flex;
 	margin: 9.6rem 1.6rem 7.2rem;
 }
+
 .pl-aside {
+	height: fit-content;
+	position: sticky;
+	top: 9.6rem;
 	width: 22rem;
 }
+
 .aside-heading {
 	display: flex;
 	justify-content: space-between;
