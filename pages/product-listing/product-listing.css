@@ -112,6 +112,28 @@
 	background-color: var(--primary-color);
 }
 
+.filter-footer {
+	display: none;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.filter-footer button {
+	border-top: 1px solid var(--grey);
+	color: var(--black);
+	font-size: var(--text-md);
+	background-color: var(--lynx-white);
+	width: 50%;
+	padding: 1.6rem 0;
+}
+
+.filter-footer button:first-of-type {
+	border-right: 1px solid var(--grey);
+}
+
 @media only screen and (max-width: 980px) {
 	.pl-aside {
 		display: none;
@@ -120,6 +142,10 @@
 	.product-list {
 		margin: 0;
 		justify-content: center;
+	}
+
+	.filter-footer {
+		display: flex;
 	}
 }
 
