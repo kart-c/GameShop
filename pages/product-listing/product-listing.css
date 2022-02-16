@@ -59,6 +59,16 @@
 	align-items: baseline;
 }
 
+.pl-breadcrumb {
+	grid-column: 1/-1;
+	font-size: var(--text-md);
+	justify-self: flex-start;
+}
+
+.pl-breadcrumb .current-pg {
+	color: var(--info-color);
+}
+
 .card {
 	box-shadow: none;
 	border-radius: 0;
