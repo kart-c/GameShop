@@ -2,9 +2,14 @@
 	display: flex;
 	margin: 9.6rem 1.6rem 7.2rem;
 }
+
 .pl-aside {
+	height: fit-content;
+	position: sticky;
+	top: 9.6rem;
 	width: 22rem;
 }
+
 .aside-heading {
 	display: flex;
 	justify-content: space-between;
@@ -48,26 +53,53 @@
 .product-list {
 	margin-left: 3.2rem;
 	display: grid;
-	grid-gap: 3.2rem;
-	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+	grid-gap: 2.4rem;
+	grid-template-columns: repeat(auto-fit, minmax(28rem, 30rem));
 	justify-items: center;
+	align-items: baseline;
 }
 
-.product-list .card {
-	max-width: 40rem;
+.pl-breadcrumb {
+	grid-column: 1/-1;
+	font-size: var(--text-md);
+	justify-self: flex-start;
+}
+
+.pl-breadcrumb .current-pg {
+	color: var(--info-color);
+}
+
+.card {
+	box-shadow: none;
+	border-radius: 0;
+	height: 50rem;
 	width: 100%;
 }
 
-.overlay-icon i {
-	font-size: var(--text-md);
-	transform: translateY(1px);
+.card .card-img {
+	border-radius: 0;
 }
 
-.product-list .card-discount {
+.card .content {
+	height: calc(100% - 30rem);
+	display: flex;
+	flex-direction: column;
+}
+
+.content h4 {
+	font-weight: 700;
+	margin: 0;
+}
+
+.card-discount {
 	color: var(--brand-color);
 }
 
-.product-list .action-link {
+.card p {
+	margin-top: auto;
+}
+
+.card .action-link {
 	background-color: var(--white);
 	color: var(--brand-color);
 	border: 2px solid var(--brand-color);
@@ -85,12 +117,46 @@
 	background-color: var(--primary-color);
 }
 
-@media only screen and (max-width: 1024px) {
+.filter-footer {
+	display: none;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.filter-footer button {
+	border-top: 1px solid var(--grey);
+	color: var(--black);
+	font-size: var(--text-md);
+	background-color: var(--lynx-white);
+	width: 50%;
+	padding: 1.6rem 0;
+}
+
+.filter-footer button:first-of-type {
+	border-right: 1px solid var(--grey);
+}
+
+@media only screen and (max-width: 980px) {
 	.pl-aside {
 		display: none;
 	}
 
 	.product-list {
 		margin: 0;
+		justify-content: center;
+	}
+
+	.filter-footer {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1750px) {
+	.pl-pg {
+		width: 90%;
+		margin: 9.6rem auto 7.2rem;
 	}
 }

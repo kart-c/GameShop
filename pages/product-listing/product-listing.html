@@ -8,11 +8,13 @@
 		<link rel="stylesheet" href="https://feather-design.netlify.app/Components/main.css" />
 		<link rel="stylesheet" href="../../main.css" />
 		<link rel="stylesheet" href="./product-listing.css" />
-		<title>Cart</title>
+		<title>GameShop | Products</title>
 	</head>
 	<body>
 		<header class="header">
-			<h2><a href="../../index.html">Website</a></h2>
+			<h2>
+				<a href="../../index.html">Game<span>Shop</span></a>
+			</h2>
 			<input type="search" name="search" class="header-search" placeholder="Search..." />
 			<i class="fas fa-bars hamburger-menu"></i>
 			<nav class="nav">
@@ -24,7 +26,7 @@
 						<a href="../wishlist/wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
 					</li>
 					<li>
-						<a href="#"><i class="fas fa-shopping-bag"></i> Bag</a>
+						<a href="../cart/cart.html"><i class="fas fa-shopping-bag"></i> Bag</a>
 					</li>
 				</ul>
 			</nav>
@@ -47,15 +49,15 @@
 					</div>
 					<div class="checkbox-container">
 						<input type="checkbox" name="disabled example input" id="price-checkbox-2" />
-						<label for="price-checkbox-2">Adventure</label>
+						<label for="price-checkbox-2">Sports</label>
 					</div>
 					<div class="checkbox-container">
 						<input type="checkbox" name="disabled example input" id="price-checkbox-3" />
-						<label for="price-checkbox-3">Racing</label>
+						<label for="price-checkbox-3">RPG</label>
 					</div>
 					<div class="checkbox-container">
 						<input type="checkbox" name="disabled example input" id="price-checkbox-4" />
-						<label for="price-checkbox-4">RPG</label>
+						<label for="price-checkbox-4">Strategy</label>
 					</div>
 				</div>
 				<div class="aside-rating">
@@ -72,6 +74,10 @@
 						<input type="radio" name="example input" id="rating-input-3" />
 						<label for="rating-input-3">2 star and above</label>
 					</div>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="rating-input-3" />
+						<label for="rating-input-3">1 star and above</label>
+					</div>
 				</div>
 				<div class="aside-rating">
 					<span>Sort By</span>
@@ -86,15 +92,24 @@
 				</div>
 			</aside>
 			<section class="product-list pl-list">
+				<div class="pl-breadcrumb">
+					<a href="../../index.html">Home</a> > <a href="#" class="current-pg">Products</a>
+				</div>
 				<div class="card product-card card-shadow">
-					<img
-						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
-						alt="card with icon"
-						class="card-img"
-					/>
+					<a href="#">
+						<picture>
+							<source srcset="../../Assets/wallpaperflare.com_wallpaper.jpg" />
+							<source srcset="../../Assets/wallpaperflare.com_wallpaper.jpg" />
+							<img
+								src="../../Assets/wallpaperflare.com_wallpaper.jpg"
+								alt="card image 1"
+								class="card-img"
+							/>
+						</picture>
+					</a>
 					<div class="content">
-						<h3>Product title</h3>
-						<h4>Product category</h4>
+						<h4>God of War</h4>
+						<span>RPG - PC game</span>
 						<div class="overlay-icon">
 							<i class="far fa-heart"></i>
 						</div>
@@ -107,14 +122,58 @@
 					</div>
 				</div>
 				<div class="card product-card card-shadow">
-					<img
-						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
-						alt="card with icon"
-						class="card-img"
-					/>
+					<a href="#">
+						<picture>
+							<source srcset="../../Assets/category-img-1__1.webp" />
+							<source srcset="../../Assets/category-img-1__2.jpg" />
+							<img src="../../Assets/category-img-1__3.jpg" alt="card image 2" class="card-img" />
+						</picture>
+					</a>
 					<div class="content">
-						<h3>Product title</h3>
-						<h4>Product category</h4>
+						<h4>Read Dead Redemption 2</h4>
+						<span>Action/Adventure - PC game</span>
+						<div class="overlay-icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<a href="#" class="action-link">Add to Cart</a>
+					</div>
+				</div>
+				<div class="card product-card card-shadow">
+					<a href="#">
+						<picture>
+							<source srcset="../../Assets/category-img-2__1.webp" />
+							<source srcset="../../Assets/category-img-2__2.jpg" />
+							<img src="../../Assets/category-img-2__3.jpg" alt="card image 3" class="card-img" />
+						</picture>
+					</a>
+					<div class="content">
+						<h4>Fifa 2021</h4>
+						<span>Sports - PC game</span>
+						<div class="overlay-icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<a href="#" class="action-link">Add to Cart</a>
+					</div>
+				</div>
+				<div class="card product-card card-shadow">
+					<a href="#">
+						<picture>
+							<source srcset="../../Assets/hero-image.webp" />
+							<source srcset="../../Assets/hero-image-2.jpg" />
+							<img src="../../Assets/hero-image-3.jpg" alt="card image 4" class="card-img" />
+						</picture>
+					</a>
+					<div class="content">
+						<h4>Horizon Forbidden West</h4>
+						<span>RPG - PC game</span>
 						<div class="overlay-icon">
 							<i class="far fa-heart"></i>
 						</div>
@@ -127,33 +186,16 @@
 					</div>
 				</div>
 				<div class="card product-card card-shadow">
-					<img
-						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
-						alt="card with icon"
-						class="card-img"
-					/>
+					<a href="#">
+						<picture>
+							<source srcset="../../Assets/category-img-3__1.webp" />
+							<source srcset="../../Assets/category-img-3__2.jpg" />
+							<img src="../../Assets/category-img-3__3.jpg" alt="card image 5" class="card-img" />
+						</picture>
+					</a>
 					<div class="content">
-						<h3>Product title</h3>
-						<h4>Product category</h4>
-						<div class="overlay-icon">
-							<i class="far fa-heart"></i>
-						</div>
-						<p>
-							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
-							<small class="card-discount">(60% OFF)</small>
-						</p>
-						<a href="#" class="action-link">Add to Cart</a>
-					</div>
-				</div>
-				<div class="card product-card card-shadow">
-					<img
-						src="../../Assets/wallpaperflare.com_wallpaper.jpg"
-						alt="card with icon"
-						class="card-img"
-					/>
-					<div class="content">
-						<h3>Product title</h3>
-						<h4>Product category</h4>
+						<h4>Age of Empires IV</h4>
+						<span>Strategy - PC game</span>
 						<div class="overlay-icon">
 							<i class="far fa-heart"></i>
 						</div>
@@ -165,6 +207,10 @@
 					</div>
 				</div>
 			</section>
+			<footer class="filter-footer">
+				<button class="btn-primary">Filters</button>
+				<button class="btn-primary">Sort</button>
+			</footer>
 		</main>
 	</body>
 </html>
